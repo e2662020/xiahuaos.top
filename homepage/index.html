@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Cache-Control" content="max-age=7200" />
+        <script type="text/javascript" src="./js/javascript.js"></script>
+        <script type="text/javascript" src="./js/main.js"></script>
+        <script type="text/javascript" src="./js/search.js"></script>
+        <script type="text/javascript" src="./js/my_favorite.js"></script>
+        <script type="text/javascript" src="./js/setting.js"></script>
+        <link rel="stylesheet" type="text/css" href="./css/css.css">
+        <link rel="stylesheet" type="text/css" href="./css/backgroud.css">
+        <link rel="stylesheet" type="text/css" href="./css/public.css">
+        <link rel="stylesheet" type="text/css" href="./css/my_favorite.css">
+        <link rel="stylesheet" type="text/css" href="./css/search.css">
+        <link rel="stylesheet" type="text/css" href="./css/setting.css">
+    </head>
+    
+    <body ondragstart="return false;"  >
+        <div id="search_backgroud" class="search" ></div>
+        <div id="backgroud_blur"  onclick=search_change_style_return()></div>
+        <div class="return" id="search_change_style_return" onclick=search_change_style_return()></div>
+        <div id="search_div" class="search">
+            <form  action="https://www.baidu.com/s">
+                <input type="text" style=" text-align:center" id="search_input" name="wd" autocomplete = "off" class="search" onclick=search_change_style()>
+                <!-- <put type="submit" id="search_submit" > -->
+            </form>
+        </div>
+            <!-- <div id="change_search_engine"> </div> -->
+            <!-- onmousedown=mouse_onlick(window.event) -->
+        <div class="return" id="my_favorite_input_close" onclick=my_favorite_input_close()></div>
+        <div id="Myfavorite"   >
+            <div id="my_favorite_main" style="overflow:auto;" >
+                <!-- <div class="my_favorite">
+                    <a href="https://baidu.com" >
+                        <div class="my_favorite_box" id="box_2"  >
+                            <img class="my_favorite_logo" src="https://baidu.com/favicon.ico">
+                            <div class="my_favorite_name" style=" text-align:center">1</div>
+                        </div>
+                    </a>
+                    <div class="my_favorite_delete" onclick=my_favorite_delect(2)>x</div>
+                </div> -->
+
+
+                    <!-- <div class="my_favorite_box" id="box_add" onclick=my_favorite_input_open()>
+                        <div id="my_favorite_add_circle">
+                            <div id="my_favorite_add_x"><div id="my_favorite_add_y"></div></div>
+                        </div>
+                    </div> -->
+            </div>    
+            <div id="my_favorite_delete_botton"   onclick=my_favorite_delete_show() ><div id="my_favorite_delete_botton_text">编辑</div></div>
+            <div id="my_favorite_input"  >
+                <!-- <div class="my_favorite_input_select" onclick=my_favorite_input_close() >关闭</div> -->
+                    <form class="my_favorite_input_form"  >
+                        <!-- <div id="my_favorite_input_form_text_name1">添加收藏夹</div> -->
+                        <!-- <div id="my_favorite_input_form_text_name2">url:</div> -->
+                        <input type="text" class="my_favorite_input_form_text" id="my_favorite_input_form_text_1"  placeholder="名称">
+                        <input type="text" class="my_favorite_input_form_text" id="my_favorite_input_form_text_2" placeholder="网址" value="https://">
+                    </form>
+                    <div class="my_favorite_input_select" onclick=my_favorite_input_ok() >确定</div>
+                
+            </div>
+        </div>
+        <div class="return" id="main_setting_close" onclick=main_setting_close()></div>
+        <div id="setting_icon" onclick=main_setting_open()>
+            <div class="setting_icon_cube" id="setting_icon_cube_1"></div>
+            <div class="setting_icon_cube" id="setting_icon_cube_2"></div>
+            <div class="setting_icon_cube" id="setting_icon_cube_3"></div>
+            <div class="setting_icon_circle"></div>
+            <div class="setting_icon_circle" id="setting_icon_circle_2"></div>
+            
+        </div>
+        <div class="setting_select" id="main_setting_select" style="overflow:auto" >
+            <div class="setting_select_info" onclick="change_backgroud_open()">修改背景</div>
+            <div class="setting_select_info" onclick="more_setting()">更多设置</div>
+            <div class="setting_select_info" onclick="about_this_website()">关于本作品</div>
+            <div class="setting_select_info" onclick="test_flash_all()">清除所有缓存</div>
+        </div>
+        <div class="return" id="close_setting_change_window" onclick=close_setting_change_window()></div>
+        <div class="setting_change_window" id="setting_change_window_public">
+            <div class="setting_change_window_select_2x4">
+                <div class="setting_select_backgroud"></div>
+                <div id="setting_select_backgroud_view">
+                </div>
+                <div id="setting_setting_backgroud_input_file_text">
+                <h1 style="font-size:15px">修改背景</h1>
+                <h2>点击选择背景修改背景</h2>
+                </div>
+                <div id="setting_select_backgroud_add"> 选择背景
+                <label id="setting_backgroud_input_file_label" >
+                <input type="file" id="setting_backgroud_input_file" />
+                </label>
+                </div>
+            </div>
+           <div class="setting_change_window_select_2x2">
+                <div class="setting_select_backgroud"></div>
+                <div> </div>
+            </div>
+            <div class="setting_change_window_select_2x1">
+                <div class="setting_select_backgroud"></div>
+                <div> </div>
+            </div>
+            <div class="setting_change_window_select_2x1">
+                <div class="setting_select_backgroud"></div>
+                <div> </div>
+            </div>
+            <div class="setting_change_window_select_nx4">
+            </div>
+        </div>
+    </body>
+</html>

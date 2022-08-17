@@ -1,0 +1,290 @@
+#setting_icon
+ {
+     transform: translateX(-100%) ;
+     left:100%;
+     top:0%;
+     background-color: rgb(121, 121, 121,0);
+     width: 40px;
+     height: 40px;
+     border-radius: 30px;
+     opacity:0.5;
+     position: relative;
+     transition: 0.3s;
+ }
+ .setting_icon_cube
+ {
+     position:absolute;
+     transform: translateX(-50%) translateY(-50%);
+     left:50%;
+     top:50%;
+     width:20%;
+     height:75%;
+     border-radius: 1px;
+     background-color: whitesmoke;
+     transition: 0.8s;
+ }
+ /* #setting_icon:hover
+ {
+     background-color:rgb(121, 121, 121);
+     transform: translateX(-100%) rotate(120deg);
+     opacity:0.8;
+ }  */
+ .setting_icon_circle
+ {
+     position:absolute;
+     animation: none;
+     transform: translateX(-50%) translateY(-50%);
+     background-color: whitesmoke;
+     height: 55%;
+     width: 55%;
+     left:50%;
+     top:50%;
+     border-radius: 15px;
+     transition: 0.8s;
+ }
+ #setting_icon_cube_1
+ {
+     animation:setting_icon_cube_1 1s;
+     animation-fill-mode: forwards;
+ }
+ @keyframes setting_icon_cube_1
+ {
+     to{transform: translateX(-50%) translateY(-50%) rotate(360deg);}
+ }
+ #setting_icon_cube_2
+ {
+     animation:setting_icon_cube_2 1s;
+     animation-fill-mode: forwards;
+ }
+ @keyframes setting_icon_cube_2
+ {
+     to{transform: translateX(-50%) translateY(-50%) rotate(420deg);}
+ }
+ #setting_icon_cube_3
+ {
+     animation:setting_icon_cube_3 1s;
+     animation-fill-mode: forwards;
+ }
+ @keyframes setting_icon_cube_3
+ {
+     to{transform: translateX(-50%) translateY(-50%) rotate(480deg);}
+ }
+ #setting_icon_circle_2
+ {
+     background-color: rgb(121, 121, 121);
+     height: 30%;
+     width: 30%;
+
+ }
+
+ .setting_select
+ {
+     position:absolute;
+     background-color: rgb(245, 245, 245,.8);
+     width: 130px;
+     height: auto;
+     border-radius: 15px;
+     opacity:0.6;
+     transform: scale(0);
+     transition: 0.1s;
+     user-select: none;
+     display: none;
+ }
+ .setting_select_info
+ {
+
+     position: relative;
+     width:100%;
+     height:40px;
+     background-color: rgb(245, 245, 245);
+     transition: .3s;
+     font-family:微软雅黑;
+     font-weight: 100;
+     text-align:left;
+     font-size: 15px;
+     text-align: left;
+     letter-spacing: 1px;
+     line-height:40px;
+     text-indent:1em;
+     /* padding-left:20px; */
+
+
+
+ }
+ .setting_select_info:hover
+ {
+     background-color: rgba(99, 88, 88, 0.9);
+ }
+ #main_setting_select
+ {
+     top:40px;
+     right:40px;
+     transform-origin: right top;
+ }
+ .setting_change_window
+ {
+     position: absolute; 
+     left:50%;
+     display:none;
+     background-color: whitesmoke;
+     transform: translateX(-50%) rotateY(90deg);
+     top:30px;
+     border-radius: 15px;
+     width: 350px;
+     height:400px;
+     transition: 0.2s;
+     overflow:auto;
+     box-shadow:0 0 0 1px hsla(0,0%,100%,.3) inset,0 .1em 0.3em rgba(0, 0, 0, 0.6);
+ }
+ .setting_change_window::-webkit-scrollbar
+ {
+     display:none;/*ChromeSafari*/
+     /* 不显示拖动条 */
+ }
+ .setting_change_window_select_2x2
+ {
+     position: relative; 
+     /* left:50%; */
+     /* display:none;  */
+     background-color: rgb(194, 192, 192,.5);
+     transform: rotateY(0deg);
+     margin-top:18px;
+     margin-left:18px;
+     border-radius: 15px;
+     width: 150px;
+     height:150px;
+     transition: 0.3s;
+     opacity:0.6;
+     box-shadow:0 0 0 1px hsla(0,0%,100%,.2) inset,0 .1em 0.3em rgba(0, 0, 0, 0.5);
+     float:left;
+     
+ }
+ .setting_change_window_select_2x2:hover
+ {
+     opacity:0.7;
+     box-shadow:0 0 0 1px hsla(0,0%,100%,.3) inset,0 .2em 0.4em rgba(0, 0, 0, 0.6);
+ }
+ .setting_change_window_select_2x1
+ {
+     position: relative; 
+     /* left:50%; */
+     /* display:none;  */
+     background-color: rgb(194, 192, 192,.5);
+     transform: rotateY(0deg);
+     margin-top:18px;
+     margin-left:18px;
+     border-radius: 15px;
+     width: 150px;
+     height:68px;
+     transition: 0.3s;
+     opacity:0.6;
+     float:left;
+     box-shadow:0 0 0 1px hsla(0,0%,100%,.2) inset,0 .1em 0.3em rgba(0, 0, 0, 0.5);
+     
+ }
+ .setting_change_window_select_2x1:hover
+ {
+     opacity:0.7;
+     box-shadow:0 0 0 1px hsla(0,0%,100%,.3) inset,0 .2em 0.4em rgba(0, 0, 0, 0.6);
+ }
+ .setting_change_window_select_2x4
+ {
+     position: relative; 
+     /* left:50%; */
+     /* display:none;  */
+     background-color: rgb(194, 192, 192,.5);
+     transform: rotateY(0deg);
+     margin-top:18px;
+     margin-left:18px;
+     border-radius: 15px;
+     width: 320px;
+     height:150px;
+     transition: 0.3s;
+     opacity:0.6;
+     box-shadow:0 0 0 1px hsla(0,0%,100%,.2) inset,0 .1em 0.3em rgba(0, 0, 0, 0.5);
+     float:left;
+     
+ }
+ .setting_change_window_select_2x4:hover
+ {
+     opacity:0.9;
+     box-shadow:0 0 0 1px hsla(0,0%,100%,.3) inset,0 .2em 0.4em rgba(0, 0, 0, 0.6);
+ }
+ .setting_change_window_select_nx4
+ {
+     position: relative; 
+     /* left:50%; */
+     /* display:none;  */
+     background-color: rgb(194, 192, 192,.5);
+     transform: rotateY(0deg);
+     margin-top:18px;
+     margin-left:18px;
+     border-radius: 15px;
+     width: 320px;
+     height:150px;
+     transition: 0.3s;
+     opacity:0.5;
+     box-shadow:0 0 0 1px hsla(0,0%,100%,.2) inset,0 .1em 0.3em rgba(0, 0, 0, 0.5);
+     float:left;
+ }
+ #setting_select_backgroud_view
+ {
+     position:relative;
+     margin-top:22px;
+     margin-left:150px;
+     width: 140px;
+     height:100px;
+     background-size:140px 100px;  
+     background-color:rgb(194, 192, 192,.9);
+     border-radius: 10px;
+     /*background-image: url(../background/png001.png);*/
+     float:left;
+     display:block;
+ }
+ #setting_select_backgroud_add
+ {
+     position: absolute; 
+     margin-top:95px;
+     margin-left:30px;
+     width: 100px;
+     height:30px;
+     background-color:rgb(194, 192, 192,.7);
+     border-radius: 10px;
+     transition: .3s;
+     font-family:微软雅黑;
+     font-weight: 100;
+     text-align:left;
+     font-size: 15px;
+     letter-spacing: 1px;
+     line-height:30px;
+     text-indent:1em;
+     user-select: none;
+ }
+ #setting_select_backgroud_add:hover
+ {
+     background-color:rgb(194, 192, 192,1);
+ }
+ 
+ #setting_backgroud_input_file
+ {
+     position: absolute;
+     opacity:0;
+     margin-top:0px;
+     margin-left:-80px;
+     background-color:rgb(194, 192, 192,.7);
+     width: 100px;
+     height:30px;
+     border-radius: 10px;
+ }
+ #setting_setting_backgroud_input_file_text
+ {
+     position: absolute;
+     width: 100px;
+     height:50px;
+     margin-top:13px;
+     margin-left:30px;
+     font-family:微软雅黑;
+     font-weight:20px;
+     user-select: none;
+     font-size:2px;
+ }

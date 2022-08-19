@@ -187,6 +187,20 @@ h1 {
 	box-shadow: none;
 }
 
+.btnassit {
+	width: 50%;
+	color: #fff;
+	background-color: #06c000;
+	animation: fadeIn 0.5s ease-in 0.7s;
+	animation-fill-mode: both;
+}
+
+.btnassit:active {
+	filter: none;
+	transform: scale(0.95);
+	background-color: var(--theme-color-active1);
+}
+
 .smalla{
 	color:#95a5a6;
 	animation: fadeIn 0.5s ease-in 0.7s;

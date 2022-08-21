@@ -25,7 +25,7 @@
 			<div class="top">
 				<h1 class="h1CN">虾滑系统<br/>小身材，大能量</h1>
 				<div id="mainBtnContainer">
-					<a href="https://www.123pan.com/s/leeDVv-vTCJv">
+					<a href="https://cloud.189.cn/t/2uMfiqYBV7Jf" onClick="alert('提取码以复制到剪贴板');copy('ggk2');" >
 						<button class="mainBtn btnStart"  type="button" title="立即开始使用windows10精简。"> 开始使用 </button>
 					</a>
 					<!-- 这是下载按钮 -->
@@ -119,6 +119,22 @@
 		</footer>
 		<script>
 			console.log('虾滑系统团队 提醒您\n 熬夜伤身体,不熬夜不伤\n\n加入我们 https://forms.office.com/r/1N0G3aP8E6')
+			function copy(text) {
+				
+				// 将传进来的参数强转为字符串
+				text = String(text);
+				input = document.createElement('INPUT');
+				input.style.opacity  = 0;
+				input.style.position = 'absolute';
+				input.style.left = '-9999px';
+				document.body.appendChild(input);
+				input.value = text;
+				input.select();
+				input.setSelectionRange(0, text.length);
+				document.execCommand('copy');
+				document.body.removeChild(input);
+				
+			}
 		</script>
 		<script type="text/javascript" src="dist/assist-entry.js"></script>
 	</body>
